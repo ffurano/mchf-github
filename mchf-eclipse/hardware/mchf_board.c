@@ -414,7 +414,7 @@ static void mchf_board_adc1_init(void)
     ADC_Init(ADC1,&ADC_InitStructure);
 
     // Regular Channel Config
-    ADC_RegularChannelConfig(ADC1, ADC_Channel_6, 1, ADC_SampleTime_3Cycles);
+    ADC_RegularChannelConfig(ADC1, ADC_Channel_3, 1, ADC_SampleTime_3Cycles);
 
     // Enable
     ADC_Cmd(ADC1, ENABLE);
@@ -466,7 +466,7 @@ static void mchf_board_adc2_init(void)
     ADC_Init(ADC2,&ADC_InitStructure);
 
     // Regular Channel Config
-    ADC_RegularChannelConfig(ADC2, ADC_Channel_3, 1, ADC_SampleTime_3Cycles);
+    ADC_RegularChannelConfig(ADC2, ADC_Channel_6, 1, ADC_SampleTime_3Cycles);
 
     // Enable
     ADC_Cmd(ADC2, ENABLE);
